@@ -1,9 +1,0 @@
-<html>
-	<head>
-		<title>NOTO</title>
-	</head>
-	<body>
-		<p>Labas</p>
-		<p></p>
-	</body>
-</html>
