@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <style>
-        body {
-            margin: 20px 20px 20px 20px;
+        main {
+            margin: 20px 0px 0px 20px;
         }
         h1 {
             font-family: 'Times New Roman', Times, serif;
@@ -25,7 +25,7 @@
             font-family: Arial, Helvetica, sans-serif;
         }
         .center {
-            text-align: left;
+            text-align: right;
             padding: 3px;
             background-color: blue;
             color: white;
@@ -41,31 +41,46 @@
             width: 100%;
             border: 0px solid black;
             padding-top: 0px;
+            padding-right: 15px;
         }
         td {
-            padding-top: 0px;
-            border: 0px solid black;
-            margin-top: 0px;
+            vertical-align: top;
+            width: 33%;
         }
         .coupon {
-            border: 1px solid black;
-            border-color: ;
+            border: 5px solid black;
             display: block;
             height: 200px;
+            border-style: dashed;
+            width: auto;
+            padding-top: 10px;
         }
         img {
             border: 1px solid black;
-            margin-top: 0px;
+            width: 100%;
         }
         p {
-           margin-top: 0px;
+           margin: 0px 10px;
            font-family: Arial, Helvetica, sans-serif;
+           text-align: justify;
         }
         .bobbity {
+            color: red;;
+        }
+        .text {
             color: red;
+            text-align: center;
+        }
+        .by {
+            padding-top: 40px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .border {
+            width: 50%;
+            height: 50%;
         }
         footer {
-            padding-right: 0px;
+            padding: 0px;
         }
     </style>
 </head>
@@ -81,7 +96,7 @@
                 <tr>
                     <td class="line">Schoolname.com</td>
                     <td class="center">This Scool's Best News</td>
-                    <td class="line">&#36 1.00</td>
+                    <td class="center">&#36;1.00</td>
                 </tr>
             </table>
         </td>
@@ -93,10 +108,11 @@
         <td>
             <table>
                 <tr>
-                    <td>
-                        <table><img src="man_silhouette_clip_art_9510.jpg" width="250px" height="250px" alt="person_siluet"></table>
+                    <td class="border">
+                        <img src="man_silhouette_clip_art_9510.jpg" alt="person_siluet"></table>
+                        <br>
                         <table>
-                            <td class="coupon">-Coupon-</td>
+                            <td class="coupon"><p class="text"><b>-Coupon-</b></p></td>
                         </table>
                     </td>
                     <td><b><p class="bobbity">Bobbity Bobbity Boo -</p>
@@ -135,17 +151,17 @@
                         whatever whatever Blah, blah.
                         yack yack, yada yada, whatever
                         whatever</p>
-                        By: Your Name</b>
+                        <p class="by">By: Your Name</p></b>
                         </td>
                 </tr>
             </table>
-        </td>
-    </tr>
+        </tr>
+    </td>
 </table>
 </main>
 <!------------footer------------>
 <footer>
-    <p>K-5 Computer Lab cakdome.com</p>
+    <p><sub>K-5 Computer Lab cakdome.com</sub></p>
 </footer>
 </body>
 </html>
