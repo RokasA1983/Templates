@@ -2,166 +2,135 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
+    <title>layout2</title>
     <style>
-        main {
-            margin: 20px 0px 0px 20px;
+        * {
+            box-sizing: border-box;
+            margin: 0px 7px;
+        }
+        div.table {
+            display: table;
+            width: 100%;
+        }
+        div.table > div {
+            display: table-row;
+        }
+        div.table > div > div {
+            display: table-cell;
         }
         h1 {
             font-family: 'Times New Roman', Times, serif;
-            font-size: 50px;
-            margin-bottom: 15px;
+            font-size: 60px;
+            text-align: center;
+            text-transform: uppercase;
+            color: dimgray;
+            padding: 20px 0px;
+        }
+        .line1 {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 3px;
+        }
+        .line2 {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            text-transform: uppercase;
+            color: white;
         }
         h2 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
-            margin: 5px;
-        }
-        .line {
-            text-align: left;
-            padding: 3px;
-            background-color: blue;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        .center {
-            text-align: right;
-            padding: 3px;
-            background-color: blue;
-            color: white;
-            font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
-        }
-        .title {
             text-align: center;
-            color: gray;
             text-transform: uppercase;
+            color: dimgray;
+            padding: 20px 0px 0px 0px;
         }
-        table {
-            width: 100%;
-            border: 0px solid black;
-            padding-top: 0px;
-            padding-right: 15px;
-        }
-        td {
-            vertical-align: top;
-            width: 33%;
+        img {
+            border: 2px solid black;
+            width: 280%;
+            height: auto;
+            margin-top: 10px;
+            padding-right: 10px;
         }
         .coupon {
             border: 5px solid black;
-            display: block;
-            height: 200px;
             border-style: dashed;
+            height: 150px;
             width: auto;
-            padding-top: 10px;
+            margin: 0px 15px;
+            padding: 7px 20px;
         }
-        img {
-            border: 1px solid black;
-            width: 100%;
-        }
-        p {
-           margin: 0px 10px;
-           font-family: Arial, Helvetica, sans-serif;
-           text-align: justify;
-        }
-        .bobbity {
-            color: red;;
+        .text2 {
+            font-size: 20px;
+            text-align: center;
+            vertical-align: top;
+            color: red;
+            display: inline;
+            padding-left: 60px;
         }
         .text {
+            font-family: Arial, Helvetica, sans-serif;
+            vertical-align: top;
+            width: 33%;
+            padding: 5px 0px 0px 5px;
+        }
+        p {
+            padding-bottom: 10px;
+        }
+        .title {
             color: red;
-            text-align: center;
-        }
-        .by {
-            padding-top: 40px;
-            font-family: 'Times New Roman', Times, serif;
-        }
-        .border {
-            width: 50%;
-            height: 50%;
         }
         footer {
+            margin: 0px;
             padding: 0px;
+        }
+        .text3 {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            padding: 30px 0px 0px 0px
         }
     </style>
 </head>
 <body>
-<!------------header------------>
-    <h1 class="title">The Daily News</h1>
-<!------------main------------>
-<main>
-<table>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td class="line">Schoolname.com</td>
-                    <td class="center">This Scool's Best News</td>
-                    <td class="center">&#36;1.00</td>
-                </tr>
-            </table>
-        </td>
-    </tr>
-</table>
-<h2 class="title">Your Headline Goes Here</h2>
-<table>
-    <tr>
-        <td>
-            <table>
-                <tr>
-                    <td class="border">
-                        <img src="man_silhouette_clip_art_9510.jpg" alt="person_siluet"></table>
-                        <br>
-                        <table>
-                            <td class="coupon"><p class="text"><b>-Coupon-</b></p></td>
-                        </table>
-                    </td>
-                    <td><b><p class="bobbity">Bobbity Bobbity Boo -</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack. yada yada, whatever
-                        whatever Blah, blah, yack yack.
-                        yada yada, whatever whatever
-                        Blah, blah, yack yack, yada yada,
-                        whatever whatever</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack, yada yada, whatever
-                        whatever</p>
-                        <p>Blah, blah, yack yack, yada</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack, yada yada, whatever
-                        whatever</p>
-                        <p>Blah, blah, yack yack, yada</p></b>
-                    </td>
-                    <td><b><p class="bobbity">Bobbity Bobbity Boo -</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack. yada yada, whatever
-                        whatever Blah, blah, yack yack.
-                        yada yada, whatever whatever
-                        Blah, blah, yack yack, yada yada,
-                        whatever whatever</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack, yada yada, whatever
-                        whatever</p>
-                        <p>Blah, blah, yack yack, yada</p>
-                        <p>Blah, blah, yack yack, yada yada,
-                        whatever whatever Blah, blah.
-                        yack yack, yada yada, whatever
-                        whatever</p>
-                        <p class="by">By: Your Name</p></b>
-                        </td>
-                </tr>
-            </table>
-        </tr>
-    </td>
-</table>
-</main>
-<!------------footer------------>
-<footer>
-    <p><sub>K-5 Computer Lab cakdome.com</sub></p>
-</footer>
+    <header>
+        <h1>The Daily News</h1>
+        <div class="table">
+            <div>
+                <div class="line1">Schoolname.com</div>
+                <div class="line2">This School's Best News</div>         
+                <div class="line1">&#36;1.00</div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Your Headline Goes Here</h2>
+        <div class="table">
+            <div>
+                <div>
+                    <div class="text"><img src="man_silhouette_clip_art_9510.jpg" alt="person_siluet"></div>
+                    <div class="coupon"><b><p class="text2">-Coupon-</p></b></div>
+                </div>
+                <div class="text">
+                    <b><p class="title">Bobbity Bobbity Boo -</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack. yada yada, whatever whatever Blah, blah, yack yack. yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack, yada yada, whatever whatever</p>
+                    <p>Blah, blah, yack yack, yada</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack, yada yada, whatever whatever</p>
+                    <p>Blah, blah, yack yack, yada</p></b>
+                    </div>
+                    <div class="text">
+                    <b><p class="title">Bobbity Bobbity Boo -</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack. yada yada, whatever whatever Blah, blah, yack yack. yada yada, whatever whatever Blah, blah, yack yack, yada yada, whatever whatever</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack, yada yada, whatever whatever</p>
+                    <p>Blah, blah, yack yack, yada</p>
+                    <p>Blah, blah, yack yack, yada yada, whatever whatever Blah, blah. yack yack, yada yada, whatever whatever</p>
+                    <p class="text3">By: Your Name</p></b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer><sub><p>K-5 Computer Lab cakdome.com</p></sub></footer>
 </body>
 </html>
