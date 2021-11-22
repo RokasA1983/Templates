@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            margin: 0px;
+            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        }
+        [class*="col-"] {
+            float: left;
+        }
+        .col-1 {
+            width: 8.33%;
+        }
+        .col-2 {
+            width: 16.66%;
+        }
+        .col-3 {
+            width: 25%;
+        }
+        .col-4 {
+            width: 33.33%;
+        }
+        .col-5 {
+            width: 41.66%;
+        }
+        .col-6 {
+            width: 50%;
+        }
+        .col-7 {
+            width: 58.33%;
+        }
+        .col-8 {
+            width: 66.66%;
+        }
+        .col-9 {
+            width: 75%;
+        }
+        .col-10 {
+            width: 83.33%;
+        }
+        .col-11 {
+            width: 91.66%;
+        }
+        .col-12 {
+            width: 100%;
+        }
+        .container-1::after .container-2::after {
+            clear: both;
+            content: "";
+	        display: table;
+        }
+        .container-1 {
+            background-color: rosybrown;
+        }
+
+ 
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+        <div class="col-5"> Most Popular Stories</div>
+        <div class="col-1"><a href="www.w3schools.com">What's This?</a></div>
+        <div class="col-2">Now</div>
+        <div class="col-2">Today</div>
+        <div class="col-2">This Week</div>
+    </div>
+    <div class="container-2">
+        <div class="col-2">
+            <div>Prot it</div>
+            <div>11</div>
+            <div>Drop it</div>
+        </div>
+        <div class="col-10">
+            <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the
+                bottom »</h1>
+            <p>Posted by: tehraschik 6 hours, 32 minutes ago in Poltica</p>
+            <p>Today is President's Day, that sacred holiday on the United States calendar devoted to honoring the
+                births of the two most important presidents in ...
+                </p>
+            <p>More | Discuss (0) | Read Fut Story at latimesbiogs.latimes.com</p>
+        </div>
+
+
+    </div>
+    
+</body>
+</html>
