@@ -8,14 +8,24 @@
             box-sizing: border-box;
             margin: 0px 7px;
         }
-        div.table {
+        .table {
             display: table;
             width: 100%;
         }
-        div.table > div {
+        .table > div {
             display: table-row;
         }
-        div.table > div > div {
+        .table > div > div {
+            display: table-cell;
+        }
+        .table2 {
+            display: table;
+            width: 100%;
+        }
+        .table2 > div {
+            display: table-row;
+        }
+        .table2 > div > div {
             display: table-cell;
         }
         h1 {
@@ -26,46 +36,75 @@
             color: dimgray;
             padding: 20px 0px;
         }
+        .table {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        .table2 {
+            padding-right: 10px;
+            padding-left: 10px;
+        }
         .line1 {
             background-color: blue;
             font-family: Arial, Helvetica, sans-serif;
             color: white;
             padding: 3px;
+            width: 33%;
         }
         .line2 {
             background-color: blue;
             font-family: Arial, Helvetica, sans-serif;
-            text-transform: uppercase;
             color: white;
+            text-transform: uppercase;
+            text-align: center;
+            padding: 3px;
+            width: 33%;
+        }
+        .line3 {
+            background-color: blue;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            text-align: right;
+            padding: 3px;
+            padding-right: 40px;
+            width: 33%;
+        }
+        main {
+            margin: 0px;
         }
         h2 {
             font-family: Arial, Helvetica, sans-serif;
             font-size: 40px;
+            color: dimgray;
             text-align: center;
             text-transform: uppercase;
-            color: dimgray;
             padding: 20px 0px 0px 0px;
+        }
+        .table3 {
+            padding-top: 12px;
         }
         img {
             border: 2px solid black;
-            width: 280%;
-            height: auto;
-            margin-top: 10px;
-            padding-right: 10px;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin-top: 20px 10px 10px 0px;
         }
         .box-item {
             font-family: Arial, Helvetica, sans-serif;
             vertical-align: top;
-            width: 33%;
+            align-items: center;
+            width: 90%;
             padding: 5px 0px 0px 5px;
+            margin: 0px 0px 0px 0px;
         }
         .coupon {
             border: 5px solid black;
             border-style: dashed;
             height: 150px;
-            width: auto;
-            margin: 0px 15px;
-            padding: 7px 20px;
+            width: 90%;
+            margin: 0px 10px;
+            padding: 7px 10px;
         }
         .text2 {
             font-size: 20px;
@@ -87,14 +126,14 @@
         .title {
             color: red;
         }
-        footer {
-            margin: 0px;
-            padding: 0px;
-        }
         .text3 {
             font-family: 'Times New Roman', Times, serif;
             text-align: center;
             padding: 30px 0px 0px 0px
+        }
+        footer {
+            margin: 0px;
+            padding: 0px;
         }
     </style>
 </head>
@@ -102,18 +141,18 @@
     <header>
         <h1>The Daily News</h1>
         <div class="table">
-            <div>
-                <div class="line1">Schoolname.com</div>
-                <div class="line2">This School's Best News</div>         
-                <div class="line1">&#36;1.00</div>
+            <div class="line">
+                <div class="line1"><b>Schoolname.com</b></div>
+                <div class="line2"><b>This School's Best News</b></div>         
+                <div class="line3"><b>&#36;1.00</b></div>
             </div>
         </div>
     </header>
     <main>
         <h2>Your Headline Goes Here</h2>
-        <div class="table">
+        <div class="table2">
             <div>
-                <div>
+                <div class="table3">
                     <div class="box-item"><img src="man_silhouette_clip_art_9510.jpg" alt="person_siluet"></div>
                     <div class="coupon"><b><p class="text2">-Coupon-</p></b></div>
                 </div>
