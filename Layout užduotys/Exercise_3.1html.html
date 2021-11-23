@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>layout</title>
     <style>
         * {
             box-sizing: border-box;
@@ -13,16 +13,11 @@
         body {
             margin: 0px;
         }
-        main {
-            margin-top: 10px;
-        }
+ 
         .container-1 {
             margin: 0px ;
             border-bottom: 2px solid gainsboro;
             background-color: ghostwhite;
-        }
-        .container-2 {
-            padding-bottom: 20px;
         }
         img {
             width: 18px;
@@ -99,8 +94,9 @@
             border: 1px solid black;
             text-align: center;
             padding: 20px 0px;
-            margin: 00px 30px;
+            margin: 0px 30px;
             width: 60%;
+            height: 60%;
         }
         .button-5 {
             background-color: gray;
@@ -122,32 +118,34 @@
         .container-1::after {
             clear: both;
             content: "";
-	        display: table;
+            display: table;
+        }
+        .clearfix::after {
+            clear: both;
+            content: "";
+            display: table;  
+        }
+        .text-1::after {
+            clear: both;
+            content: "";
+            display: table; 
+        }
+        .container-2 {
+            margin: 20px 0px;
         }
         .mark-1 {
             float: left;
             width: 15%;
-            padding-top: 19px; 
-            padding-bottom: 32px;
-            border-bottom: 2px solid gainsboro;
-            height: 70%;
+            padding-top: 20px; 
         }
         .text-1 {
             float: left;
             width: 85%;
             border-left: 2px solid gainsboro;
             padding-left: 20px;
-            border-bottom: 2px solid gainsboro;
-            padding-bottom: 0px;
-            padding-top: 0px;
         }
         p {
             font-size: 14px;
-        }
-        .cleafix::after {
-            clear: both;
-            content: "";
-	        display: table;
         }
     </style>
 </head>
@@ -155,8 +153,8 @@
     <header>
         <div>
             <div class="container-1">
-            <div class="title-1"><img src="podcast-web-browser-logo-feed-area.jpg" alt="logo"><strong>Most Popular Stories</strong></div>
-            <div class="title-2"></div><a href="www.w3schools.com">What's This?</a></div>
+            <div class="title-1"><img src="https://img1.gratispng.com/20180320/dxw/kisspng-angle-text-brand-circle-rss-5ab0ddf7e0b572.0304700415215405999204.jpg" alt="RRS"><strong>Most Popular Stories</strong></div>
+            <div class="title-2"><a href="www.w3schools.com">What's This?</a></div>
             <div class="navi-1"><div class="button-2"><b>This Week</b></div></div>
             <div class="navi-2"><div class="button-2"><b>Today</b></div></div>
             <div class="navi-3"><div class="button-1"><b>Now</b></div></div>
@@ -165,12 +163,12 @@
     <main class="clearfix">
         <div class="container-2">
             <div class="mark-1">
-                <div class="button-3">Prot it &#xf102;</div>
+                <div class="button-3">Prot it »</div>
                 <div class="button-4"><b>11</b></b></div>
-                <div class="button-5">Drop it &#xf103;</div>
+                <div class="button-5">Drop it »</div>
             </div>
             <div class="text-1">
-                <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom <a href="www.w3schools.com">&#xf101;</a></h1>
+                <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom <a href="www.w3schools.com">»</a></h1>
                 <p><small>Posted by:<a href="www.w3schools.com">tehraschik</a> 6 hours, 32 minutes ago in <a href="www.w3schools.com">Poltica</a><small></p>
                 <p><b>Today is President's Day, that sacred holiday on the United States calendar devoted to honoring the births of the two most important presidents in ...</b></p>
                 <p><a href="www.w3schools.com">More</a> | <a href="www.w3schools.com">Discuss</a> (0) | <a href="www.w3schools.com">Read Fut Story at latimesbiogs.latimes.com</a></p>
