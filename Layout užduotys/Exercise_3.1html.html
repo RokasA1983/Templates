@@ -13,12 +13,20 @@
         body {
             margin: 0px;
         }
- 
+        @media screen and (max-width: 600px) { /*mobile*/
+            body {
+            }
+        }
+        @media screen and (min-width: 600px) { /*pc*/
+            body {
+            }
+        }
         .container-1 {
             margin: 0px ;
             border-bottom: 2px solid gainsboro;
             background-color: ghostwhite;
         }
+
         img {
             width: 18px;
             margin-right: 5px;
@@ -90,10 +98,10 @@
         }
         .button-4 {
             color: red;
-            font-size: 50px;
+            font-size: 5rem;
             border: 1px solid black;
             text-align: center;
-            padding: 20px 0px;
+            padding: 10px 0px;
             margin: 0px 30px;
             width: 60%;
             height: 60%;
@@ -111,10 +119,6 @@
             text-transform: uppercase;
             width: 60%;
         }
-        .space {
-            margin-top: 10px;
-            border-top: 2px solid gainsboro;
-        }
         .container-1::after {
             clear: both;
             content: "";
@@ -130,22 +134,64 @@
             content: "";
             display: table; 
         }
+        .mark-1::after {
+            clear: both;
+            content: "";
+            display: table; 
+        }
+        .container-2::after {
+            clear: both;
+            content: "";
+            display: table; 
+        }
+        .container-3::after {
+            clear: both;
+            content: "";
+            display: table; 
+        }
         .container-2 {
             margin: 20px 0px;
+            border-bottom: 2px solid gainsboro;
+            padding-bottom: 20px;
+            margin-top: 1em;
+            margin-bottom: 0em;
+        }
+        .container-3 {
+            margin: 20px 0px;
+            border-bottom: 2px solid gainsboro;
+            padding-bottom: 20px;
+            margin-top: 0em;
+            background-color: ghostwhite;
+            padding-top: 1rem;
         }
         .mark-1 {
             float: left;
             width: 15%;
-            padding-top: 20px; 
+            height: 100%;
+            padding-top: 5px; 
         }
         .text-1 {
             float: left;
             width: 85%;
             border-left: 2px solid gainsboro;
-            padding-left: 20px;
+            padding-left: 10px;
+            padding-top: 0px;
+        }
+        .text-2 {
+            float: left;
+            width: 85%;
+            border-left: 2px solid gainsboro;
+            padding-left: 10px;
+            padding-top: 0px;
         }
         p {
             font-size: 14px;
+            margin-top: 0.0em;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 0.0em;
+            padding-top: 0em;
         }
     </style>
 </head>
@@ -168,12 +214,60 @@
                 <div class="button-5">Drop it »</div>
             </div>
             <div class="text-1">
-                <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom <a href="www.w3schools.com">»</a></h1>
-                <p><small>Posted by:<a href="www.w3schools.com">tehraschik</a> 6 hours, 32 minutes ago in <a href="www.w3schools.com">Poltica</a><small></p>
+                <h1>C-SPAN ranks presidents: Abe still on top, new shocker at the bottom<a href="www.w3schools.com">»</a></h1>
+                <p><small>Posted by: <a href="www.w3schools.com">tehraschik</a> 6 hours, 32 minutes ago in <a href="www.w3schools.com">Poltica</a><small></p>
                 <p><b>Today is President's Day, that sacred holiday on the United States calendar devoted to honoring the births of the two most important presidents in ...</b></p>
                 <p><a href="www.w3schools.com">More</a> | <a href="www.w3schools.com">Discuss</a> (0) | <a href="www.w3schools.com">Read Fut Story at latimesbiogs.latimes.com</a></p>
             </div>
         </div>
+        <div class="container-3">
+            <div class="mark-1">
+                <div class="button-3">Prot it »</div>
+                <div class="button-4"><b>8</b></b></div>
+                <div class="button-5">Drop it »</div>
+            </div>
+            <div class="text-2">
+                <h1>Obama Makes History... Breaks US Debt Record In Just 30 Days<a href="www.w3schools.com">»</a></h1>
+                <p><small>Posted by: <a href="www.w3schools.com">pc26</a> 7 hours, 21 minutes ago in <a href="www.w3schools.com">News</a><small></p>
+                <p><b>On Friday the 13th, the Democratic Congress will approve the largest On Friday the 13th, the
+                    Democratc Congress will approve the largest wansfer of private ...
+                    </b></p>
+                <p><a href="www.w3schools.com">More</a> | <a href="www.w3schools.com">Discuss</a> (13) | <a href="www.w3schools.com">Read Fut Story at latimesbiogs.latimes.com</a></p>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="mark-1">
+                <div class="button-3">Prot it »</div>
+                <div class="button-4"><b>14</b></b></div>
+                <div class="button-5">Drop it »</div>
+            </div>
+            <div class="text-1">
+                <h1>Unequal Education<a href="www.w3schools.com">»</a></h1>
+                <p><small>Posted by: <a href="www.w3schools.com">populat</a> 7 hours ago in <a href="www.w3schools.com">Poltica</a><small></p>
+                <p><b>No Child Left Behind demands equal test scores from neighborhoods with unequal incomes and
+                    resources.                    
+                    </b></p>
+                <p><a href="www.w3schools.com">More</a> | <a href="www.w3schools.com">Discuss</a> (1) | <a href="www.w3schools.com">Read Fut Story at latimesbiogs.latimes.com</a></p>
+            </div>
+        </div>
+        <div class="container-3">
+            <div class="mark-1">
+                <div class="button-3">Prot it »</div>
+                <div class="button-4"><b>17</b></b></div>
+                <div class="button-5">Drop it »</div>
+            </div>
+            <div class="text-2">
+                <h1>Man could face jail over 'No Jews' sign<a href="www.w3schools.com">»</a></h1>
+                <p><small>Posted by: <a href="www.w3schools.com">BronxBomber</a> 6 hours. 19 minutes ago in <a href="www.w3schools.com">News</a><small></p>
+                <p><b>The head of a Turkish nationalist group could face up to a year in jail after being charged over a
+                    placard he put in his...
+                    </b></p>
+                <p><a href="www.w3schools.com">More</a> | <a href="www.w3schools.com">Discuss</a> (1) | <a href="www.w3schools.com">Read Fut Story at latimesbiogs.latimes.com</a></p>
+            </div>
+        </div>              
     </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>
