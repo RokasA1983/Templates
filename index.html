@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript</title>
+</head>
+<body>
+    <script>
+        let noto = document.createElement('div');
+        noto.className = 'myDiv';
+        let myDiv = document.createElement('h1');
+        myDiv.id = 'myH1';
+        myDiv.textContent = 'Information';
+        document.body.appendChild(myDiv);
+        noto.innerHTML += '<h2>What is Lorem Ipsum?</h2>';
+        document.body.appendChild(noto);
+        noto.innerHTML += '<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>';
+        noto.innerHTML += '<a href="https://www.lipsum.com/feed/html">About This</a>';
+
+        noto.style.border = '1px solid #0000FF';
+        noto.style.margin = '20px 10px 20px 20px';
+        noto.style.padding = '10px';
+        noto.style.backgroundColor = 'red';
+
+        myDiv.style.margin = '20px 10px 20px 20px';
+        myDiv.style.color = 'blue';
+        myDiv.style.fontStyle = "italic"
+        myDiv.style.border = '1px solid blue'
+        myDiv.style.textAlign = 'center'
+        myDiv.style.backgroundColor = 'red';
+
+
+
+        </script>
+    
+</body>
+</html>

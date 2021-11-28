@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise_4</title>
+    <style>
+        body {
+        margin: 2rem;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container {
+            display: block;
+            
+        }
+        .image {
+        background-image: url("https://www.adhamdannaway.com/wp-content/themes/dannaway/images/about-adham-dannaway.jpg");
+        height: 500px;
+        width: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        background-attachment: scroll;
+        float: right;
+    
+        }
+        .image::after {
+            display: table;
+            content: "";
+            clear: both;
+        }
+        .text {
+            width: 40%;
+        }
+        h1 {
+            font-size: 5rem;
+            padding: 0;
+            margin: 2px 0px 0px 0px;
+        }
+        .text1 {
+            color: gray;
+            font-size: 1.5rem;
+            padding: 0;
+            margin: 10px 0px 10px 0px;
+        }
+        .text2 {
+            color: gray;
+            font-size: 1.2rem;
+            padding: 0;
+            margin: 10px 0px 10px 0px;
+        }
+        .fa {
+            padding: 5px;
+            font-size: 4px;
+            width: 10px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+        .fa:hover {
+            opacity: 0.7;
+        }
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+            margin-top: 115px;
+            border-top: 2px solid lightgrey;
+        }
+
+        .flex-container > div {
+            width: 100%;
+            margin: 10px;
+            text-align: center;
+            line-height: 10px;
+            font-size: 20px;
+        }
+        img {
+           width: 95%; 
+           border: 1px solid lightgray;
+           padding: 5px;
+           margin: 10px 10px;
+           border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="image"></div>
+        <div class="text">
+        <h1><b>about me</b></h1>
+        <p class="text1">I'm a U Designer and Front End Developer from Sydney. Australia.</p>
+        <p class="text2">I enlay taking complex crople ms and tuming them into
+            emate and besuMul interface detions, I aso love tie age
+            and gructure of coding and sways strive to wrte e-egan
+            and efficient code, whether it be MiML, CSS or Query</p>
+        <p class="text2">When Im not coding or pushing dixels, yout and me in the aym or on the court snocong some nocos</p>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        </div>
+    </div>
+    <div class="flex-container">
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/toddler.jpg></div>
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/sydney.jpg></div>
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/home.jpg></div>
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/workspace.jpg></div>
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/l-sit-pullup.jpg></div>
+            <div><img src=https://www.adhamdannaway.com/wp-content/themes/dannaway/images/interior-design.jpg></div>
+    </div>
+
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id=output1></div>
+    <div id=output2></div>
+    <div id=output3></div>
+    <script>
+        function doSomthing (id, code, color) {
+            let noto = document.getElementById(id);
+            noto.innerHTML += code;
+            noto.style.color = color;
+            noto.style.border = '1px solid black';
+        }
+    
+        doSomthing('output1', 'Hello', 'Red');
+        doSomthing('output2', 'Hello world', 'Blue');
+        doSomthing('output3', 'Hello very hello', 'Green');
+
+        function notostyle (id){
+            return document.getElementById(id).style;
+        }
+
+        notostyle ('output1').color = 'Gray'
+        /*
+            document.getElementById('output1').innerHTML = 'Hello';
+            document.getElementById('output2').innerHTML = 'Hello world';
+            document.getElementById('output3').innerHTML = 'Hello very hello';
+        */
+        </script>
+    
+</body>
+</html>
