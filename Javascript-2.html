@@ -5,9 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        function changeBg(elem, color){
+            elem.style.backgroundColor = color;
+        }
+    </script>
 </head>
 <body>
-    <div id=output1></div>
+    <div onclick="changeBg(this, 'Black')"></div>
+    <div onclick="changeBg(this, 'Blue')"></div>
     <div id=output2></div>
     <div id=output3></div>
     <script>
@@ -15,7 +31,7 @@
             let noto = document.getElementById(id);
             noto.innerHTML += code;
             noto.style.color = color;
-            noto.style.border = '1px solid black';
+           
         }
     
         doSomthing('output1', 'Hello', 'Red');
