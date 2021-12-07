@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sąlyginiai_uždaviniai</title>
+</head>
+<body>
+    <script>
+        // 1 exercise
+        // let n = 20;
+        // if(n > 0){
+        //     console.log('Geras');
+        // } else{
+        //     console.log('Blogas');
+        // }
+
+        // 2 exercise
+        // let n = 2;
+        // if(n > 0 && n < 4){
+        //     if(n < 2){
+        //         console.log('EIKITE');
+        //     } else  if(n > 2){
+        //             console.log('SUSTOKITE');
+        //             } else { 
+        //                 console.log('PALAUKITE');
+        //             }   
+        // }
+        
+        // 3 exercise
+        // let d = 3;
+        // let k = 18;
+        // let n = 5;
+        // if(d * n >= k){
+        //     console.log('Knygos telpa į dėžes');
+        // } else {
+        //         console.log('Knygos netelpa į dėžes');
+        // }
+
+        // 4 exercise
+        // let n = 1223;
+        // let a1 = n % 10;
+        // let a10 = ((n - a1) / 10) % 10;
+        // let a100 = ((((n - a1) / 10) - a10) / 10) % 10;
+        // let a1000 = (((((n - a1) / 10) - a10) / 10) - a100) / 10;
+        // b = (a1 == a1000) && (a10 == a100);
+        // if(b){
+		// 	console.log("Skaičius polindromas");
+		// }   else{   
+        //         console.log("Skaičius ne polindromas");
+        //     }
+
+        // 5 exercise        
+        // let n = 222444;
+        // let a = 0;
+        // while(n){
+        //     let b = n % 10;
+        //     a += b;
+        //     n = parseInt(n / 10);
+        // }
+        //     if(a % 4 == 0){
+        //         console.log('Bilietas laimingas');
+        //     } else{
+        //         console.log('Bilietas nelaimingas');
+        //     }
+
+        // 6 exercise 
+        // let m = 2004;
+        // if((0 == m % 4) && (0 != m % 100) || (0 == m % 400)){
+        //     console.log('Metai keliamieji');
+        // } else{
+        //         console.log('Metai nekeliamieji');
+        // }
+
+        // 7 exercise
+        // let n = 12221;
+        // let a, b, c = 0;
+		// b = n;
+		// while(n > 0){
+		// 	a = n % 10;
+		// 	n = parseInt(n / 10);
+		// 	c = c * 10 + a;
+		// }
+		//     if(c == b){
+		// 	    console.log("Skaičius yra polindromas");
+		//     } else{   
+        //         console.log("Skaičius nėra polindromas");
+        //     }
+
+        // 8 exercise
+        // let k = 5;
+        // let a = k % 2;
+        // if(k <= 6 && k > 0 && a == 0){
+        //     console.log('Kambarį tvarko vyresnėlis');
+        // } else  if (k <= 6 && k > 0){
+        //             console.log('Kambarį tvarko jaunėlis');
+        //         }
+
+        // 9 exercise
+        // let p1 = 5;
+        // let p2 = 8;
+        // let p3 = 9;
+        // if(p1 > p2 && p1 > p3){
+        //     console.log('Pirmas gavo geriausią pažymį');
+        // } else  if(p2 > p3 && p2 > p1){
+        //             console.log('Antras gavo geriausią pažymį');
+        //         } else {
+        //             console.log('Trečias gavo geriausią pažymį');
+        //         }
+
+        // 10 exercise
+        // let n = 2;
+        // if(n > 0 && n <=12){
+        //     if( n == 1 || n == 3 || n == 5 || n == 7 || n == 8 || n == 10 || n == 12){
+        //     console.log('d=31');
+        //     } else if(n == 4 || n == 6 || n == 9 || n == 11){
+        //         console.log('d=30');
+        //     } else {
+        //         console.log('d=28');
+        //     }
+        // }
+
+        // 11 exercise
+        // let v = 9;
+        // let m = 5;
+        // let v1 = 8;
+        // let m1 = 29;
+        // let m2 = 23;
+        // let a = v * 60 + m;
+        // let a1 = v1 * 60 + m1 + m2;
+        // if(a >= a1){
+        //     console.log('Petras į pamoką nepavėluos');
+        // } else{
+        //     console.log('Petras į pamoką pavėluos');
+        // }
+
+        // 12 exercise
+        // let n = 4;
+        // let a = n % 3;
+        // if(a == 0){
+        //     console.log('Trikampį sudėlioti galima');
+        // } else{
+        //     console.log('Trikampį sudėlioti negalima');
+        // }
+
+        // 13 exercise
+        // let m = 2005;
+        // let x = m % 4;
+        // let n = ((m - 1896) / 4) + 1;
+        // for(let m = 1896; m <= 2020; m +=4);
+        // if(x != 0){
+        //     console.log('Metai neolimpiniai');
+        // } else {
+        //     console.log(n);
+        // }
+
+        // 14 exercise
+        // let a = 1;
+        // let b = 3;
+        // let c = 4;
+        // let x = Math.sqrt(b * b - 4 * a * c);
+        // let y = 2 * a;
+        // let z1 = (b + x) / y;
+        // let z2 = (b - x) / y;
+        // if(z1 != z2 && z1 > 0 && z2 >0){
+        //     console.log('du sprendiniai '+z1+'.00 '+z2+'.00');
+        // } else if(z1 == z2){
+        //     console.log('vienas sprendinys '+z1+'.00');
+        // } else{
+        //     console.log('nėra sprendinių');
+        // }
+        
+        // 15 exercise
+        // let c = 50;
+        // let p = 20;
+        // let k = c / p;
+        // let c1 = c - (p * Math.floor(k))
+        // console.log('Saulius nusipirks ' + Math.floor(k) + ' porcijos ledų, liks centų ' + c1);
+
+        // 16 exercise
+        // let n = 100;
+        // let m = 14;
+        // let k = n / m;
+        // console.log(Math.ceil(k));
+    
+        // 17 exercise
+        // let a = 7;
+        // let b = 6;
+        // a != b;
+        // if(a > b && a != b){
+        //     b = b + 1;
+        //     a = a - 1;
+        //     console.log(a, b);
+        // } else if(a < b && a != b){
+        //     b = b - 1;
+        //     a = a + 1;
+        //     console.log(a, b);
+        // }
+
+        // 18 exercise: NESUPRATAU: Turime 6 atsitiktinius skaičius nuo 1000 iki 9999. Juos reikia išrikiuoti didėjimo tvarka.
+        // let a = 9056;
+        // let b = 4456;
+        // let c = 5056;
+        // let d = 1456;
+        // let e = 3056;
+        // let f = 8456;
+        // let x = a;
+        // if(b < x){
+        //     a = b;
+        //     b = x;
+        //     x = a;
+        // }
+        // if(c < x){
+        //     a = c;
+        //     c = x;
+        //     x = a;
+        // }
+        // if(d < x){
+        //     a = d;
+        //     d = x;
+        //     x = a;
+        // }
+        // if(e < x){
+        //     a = e;
+        //     e = x;
+        //     x = a;
+        // }
+        // if(f < x){
+        //     a = f;
+        //     f = x;
+        //     x = a;
+        // }
+        // x = b;
+        // if(c < x){
+        //     b = c;
+        //     c = x;
+        //     x = b;
+        // }
+        // if(d < x){
+        //     b = d;
+        //     d = x;
+        //     x = b;
+        // }
+        // if(e < x){
+        //     b = e;
+        //     e = x;
+        //     x = b;
+        // }
+        // if(f < x){
+        //     b = f;
+        //     f = x;
+        //     x = b;
+        // }
+        // x = c;
+        // if(d < x){
+        //     c = d;
+        //     d = x;
+        //     x = c;
+        // }
+        // if(e < x){
+        //     c = e;
+        //     e = x;
+        //     x = c;
+        // }
+        // if(f < x){
+        //     c = f;
+        //     f = x;
+        //     x = c;
+        // }
+        // x = d;
+        // if(e < x){
+        //     d = e;
+        //     e = x;
+        //     x = d;
+        // }
+        // if(f < x){
+        //     d = f;
+        //     f = x;
+        //     x = d;
+        // }
+        // x = e;
+        // if(f < x){
+        //     e = f;
+        //     f = x;
+        // }
+        // console.log(a + ' ' + b + ' ' + c + ' ' + d + ' ' + e + ' ' + f);
+    </script>
+    
+</body>
+</html>
